@@ -1,0 +1,10 @@
+from easygui import *
+while 1:
+  image = "signlang.png"
+  msg="HEARING IMPAIRMENT ASSISTANT"
+  choices = ["Live Voice", "All Done !!"]
+  reply = buttonbox(msg,image=image,choices=choices)
+  if reply == choices[0]:
+      func()
+  if reply == choices[1]:
+      break
